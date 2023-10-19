@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>[Car1]</p>
+    <p id="data10"></p>
+    <p id="data20"></p>
+    <p id="data30"></p>
+    
+    <p>[Car2]</p>
+    <p id="data11"></p>
+    <p id="data21"></p>
+    <p id="data31"></p>
+    
+    <p>[Car3]</p>
+    <p id="data12"></p>
+    <p id="data22"></p>
+    <p id="data32"></p>
+	
+	<script>
+		var car=[{name:'Sonata', color:'blue', speed:100},
+		     {name:'Jeep', color:'red', speed:70 }, 
+		     {name:'Audi', color:'white', speed:150 }]
+	
+		for(var i=0; i<car.length; i++){	
+			for(var y=1; y<=car[i].length; y++){
+				var carstr = document.getElementById("data" + y + i);
+				
+				if(y==1){
+					carstr.textContent = "자동차 이름 : " + car[i].name;
+				}
+				else if(y==2){
+					carstr.textContent = "자동차 색상 : " +  car[i].color;
+				}
+				else{
+					carstr.textContent = "자동차 속도 : " +  car[i].speed;
+				}
+			}
+			
+		}
+	
+	
+	</script>
+	
+</body>
+</html>
+
+<!--
+textContent
+= 웹문서 안에서 아이디를 찾아서 변수방에 부여한 후 변수의 내용을 출력
+- 단 선언딘 아이디 순서대로 호출됨
+
+InnerHtml
+= 바로 html에 넣을 내용 부여	
+
+
+-->

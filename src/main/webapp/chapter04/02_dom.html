@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documnet</title>
+	<script>
+		function chageClass(){
+			var heading = document.getElementById("myHeading");
+			heading.className = "blue";
+			
+		}
+	</script>
+<body>
+	<h1 id = "myHeading" class = "red">Hello World</h1>
+	<button onclick="chageClass()">Change Class</button>
+	
+	
+	<style>
+		.red{
+			color : red;
+		}
+		
+		.blue{
+			color : blue;
+		}
+	</style>
+</body>
+</html>
+
+
+<!--
+DOMContentLoaded
+= body의 Contents를 다 받고 실행
+	
+-->

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documnet</title>
+	<script>
+		function addElement(){
+			var newParagraph = document.createElement("p");
+			newParagraph.textContent = "This id a new Paragraph";
+			var myDiv = document.getElementById("myDiv");
+			myDiv.appendChild(newParagraph);
+			
+		}
+	</script>
+<body>
+	<div id = "myDiv"></div>
+	<button onclick="addElement()">Add Element</button>
+	
+</body>
+</html>
+
+
+<!--
+DOMContentLoaded
+= body의 Contents를 다 받고 실행
+	
+-->

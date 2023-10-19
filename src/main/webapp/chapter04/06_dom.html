@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documnet</title>
+	<script>
+		document.addEventListener("DOMContentLoaded", function(){
+			var button = document.getElementById("myButton");
+			
+			var image = document.getElementById("myImage");
+			var imageIndex = 1;
+			
+			button.addEventListener("click", function(){
+				imageIndex = imageIndex===1?2:1;
+		
+				image.scr = "img" + imageIndex + ".jpg"; 
+		
+			});
+			
+			
+			
+			
+		});
+		
+	</script>
+<body>
+	<button id="myButton">이미지 변경</button>
+    <p></p>
+    <img id="myImage" src="img1.jpg" alt="이미지" />
+	 
+</body>
+</html>
+
+
+<!--
+DOMContentLoaded
+= body의 Contents를 다 받고 실행
+	
+-->

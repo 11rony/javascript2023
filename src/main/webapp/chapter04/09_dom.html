@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documnet</title>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+        var select = document.getElementById("mySelect");
+        var output = document.getElementById("output");
+
+        select.addEventListener("change", function () {
+          var selectedOption = select.value;
+          console.log(selectedOption);
+          output.textContent = "성별 : " + selectedOption;
+        });
+      });
+	</script>
+<body>
+	<select id = "mySelect">
+		<option value="남"></option>
+		<option value="여"></option>
+		<option value="기타"></option>
+	</select>
+</body>
+</html>
+
+
+<!--
+DOMContentLoaded
+= body의 Contents를 다 받고 실행
+	
+-->

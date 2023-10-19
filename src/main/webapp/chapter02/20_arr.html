@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>arr</title>
+</head>
+<body>
+	<script>
+
+	    var kdata=['서울', '부산', '구포', '대구','대전'];
+	    var str1 = kdata.splice(1,2);
+	    
+	    document.write("삭제 데이터 : " + str1 + "</p>");
+	    document.write("남은 데이터 : " + kdata + "</p>");
+	   
+	   	var str2 = kdata.splice(1,1, '강릉', '세종');
+	    
+	    document.write("삭제 데이터 : " + str2 + "</p>");
+	    document.write("남은 데이터 : " + kdata + "</p>");
+	   
+	   	var str3 = kdata.splice(2, Number.MAX_VALUE);
+	 
+	    document.write("삭제 데이터 : " + str3 + "</p>");
+	    document.write("남은 데이터 : " + kdata + "</p>");
+	    
+	    
+	   	/*
+	   	slice (시작인덱스, 마지막인덱스-1)
+	   	
+	   	splice (시작인덱스, 개수)
+	   	
+	   	*/
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

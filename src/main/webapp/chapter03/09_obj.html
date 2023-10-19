@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3"></p>
+    <p id="d4"></p>
+    
+    
+	<script>
+		//기본 생성자
+		document.getElementById("d1").innerHTML = new Date();
+		
+		document.getElementById("d2").innerHTML = new Date(149180352400);
+		
+		//문자열 날짜
+		document.getElementById("d3").innerHTML = new Date("march 16, 2023 11:15:07");
+		
+		//날짜 지정(월은 0부터 시작)
+		document.getElementById("d4").innerHTML = new Date(2023, 09, 16, 11, 13, 10);
+	</script>
+	
+</body>
+</html>
+
+<!--
+textContent
+= 웹문서 안에서 아이디를 찾아서 변수방에 부여한 후 변수의 내용을 출력
+- 단 선언딘 아이디 순서대로 호출됨
+
+InnerHtml
+= 바로 html에 넣을 내용 부여	
+
+
+-->
